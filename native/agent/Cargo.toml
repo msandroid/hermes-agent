@@ -1,0 +1,18 @@
+[package]
+name = "hermes-agent-rs"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+[dependencies]
+clap = { version = "4.6", features = ["derive"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+url = "2"
+tempfile = "3"
+serde_json = "1"
+rusqlite = { version = "0.34", features = ["bundled"] }
+axum = "0.8"
+tokio = { version = "1", features = ["net", "rt-multi-thread"] }
+subtle = "2"
